@@ -30,6 +30,22 @@ function Ola(nome){
         document.write(`seja bem vindo a ${nome}`)
 }
 Ola("fiap")
+ 
+// Arrow Function
 
+const hello=()=>(console.log("função arrow function"))
 
+hello()
 
+//ARRAY[] OBJETO{} E METODOS()
+
+let jogadores =[
+    {nome:"Huguinho", idade:17},    
+    {nome: "Zezinho", idade:18},
+    {nome:"Luiziho", idade:19}
+]
+
+let listaJogadores =  jogadores.map(function(item){
+    return item.idade;
+})
+console.log(listaJogadores)
